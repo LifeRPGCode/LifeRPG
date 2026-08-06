@@ -52,3 +52,14 @@ current_hp_percent2 = current_hp2/hp_max2*100
 print(имя0+"\t [",бары0,"] ",current_hp0,"/",hp_max0, sep="")
 print(имя1+"\t\t [",бары1,"] ",current_hp1,"/",hp_max1, sep="")
 print(имя2+"\t [",бары2,"] ",current_hp2,"/",hp_max2, sep="")
+
+
+# импровизация
+gold = 387
+sword_cost = 125
+how_many_can_buy = gold // sword_cost
+add = 1
+need_for_quest = 2
+cart = "Меч: " + str(add * need_for_quest) + " шт; " + "Цена: " + str(sword_cost * need_for_quest)
+remainder = gold - sword_cost * need_for_quest
+print("Золото: ",gold,"\nСтоимочть меча:",sword_cost,"\nМогу купить:",how_many_can_buy,"\nПокупаю:", add*need_for_quest,"\nКорзина:", cart,"\nОстаток:",remainder)
